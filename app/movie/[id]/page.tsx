@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 
 
+import SubmitButton from "@/app/components/SubmitButton";
 import { db } from "@/app/db"
 import { revalidatePath } from "next/cache";
 
@@ -42,6 +43,8 @@ export default async function Page({
 
     const data = await getData(params.id)
 
+
+
     return (
         <div className="rounded-lg border p-3">
             <h1 className="text-xl font-semibold mb-5">Your Opinion</h1>
@@ -53,7 +56,7 @@ export default async function Page({
                     className="w-full border-teal-500 rounded-lg p-2">
                     </textarea>
                     <input type="hidden" name="id" value={params.id}/>
-                    <button type="submit" className="bg-teal-500 px-4 py-2 rounded-lg text-white">Add Comment</button>
+                    <SubmitButton/>
                 </form>
             <div className="mt-5 flex flex-col gap-y-3"> 
             {
