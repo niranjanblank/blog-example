@@ -26,3 +26,7 @@ export interface Movie {
     release_date: string,
     backdrop_path: string,
 }
+
+export interface Blog {
+    title: string
+}
