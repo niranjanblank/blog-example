@@ -20,7 +20,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
         <nav className="px-10 pt-5">
-          <Link href="/" className="text-2xl font-semibold">
+          <Link href="/blog" className="text-2xl font-semibold">
             blog<span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text font-bold">IT</span>
           </Link>
         </nav>
