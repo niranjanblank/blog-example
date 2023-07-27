@@ -8,7 +8,6 @@ interface BlogProp {
 
 const BlogCard:React.FC<BlogProp> = (props) => {
     const {title, thumbnail, slug} = props.blog.fields
-    console.log(props.blog)
     return (
         <div className="flex flex-col overflow-hidden rounded-lg border bg-white">
         <Link
